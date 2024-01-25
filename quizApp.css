@@ -1,0 +1,168 @@
+.container {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.question-container {
+    background-color: #E0E0E0;
+    /* Replace with the color you want */
+    color: black;
+    /* Text color */
+    padding: 26px;
+    /* Space inside the container */
+    margin: 25px;
+    /* Space outside the container */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Simple shadow effect */
+    width: 39%;
+    /* Width of the container */
+    max-width: 400px;
+    /* Maximum width */
+    margin-left: auto;
+    /* Centering the container */
+    margin-right: auto;
+}
+
+.question-text {
+    text-align: center;
+    /* Centering text */
+    font-size: 1.2em;
+    /* Text size */
+    /* Making text bold */
+}
+
+.container {
+    display: flex;
+    /* Aligns the squares in a row */
+    justify-content: center;
+    /* Center the squares horizontally */
+    align-items: center;
+    /* Center the squares vertically */
+    weight: 100vh;
+    /* Full height of the viewport */
+}
+
+.answers-container {
+    display: flex;
+    flex-direction: column;
+    /* Stack answer options vertically */
+    align-items: center;
+    /* Center the answer options */
+    margin-top: 10px;
+    /* Space between the question and answer options */
+}
+
+.answer-option {
+    background-color: #3C3C3C;
+    /* White background for the answer options */
+    color: white;
+    /* Black text color */
+    border: none;
+    /* No border */
+    width: 39%;
+    /* Width to match the question container */
+    margin: 5px 0;
+    /* Margin between answer options */
+    padding: 10px;
+    /* Padding inside the answer options */
+    text-align: left;
+    border-radius: 5px;
+    /* Slightly rounded corners for the answer options */
+}
+
+.flex-container {
+    display: flex;
+    align-items: left;
+    /* This will vertically center align items */
+    justify-content: left;
+    /* Aligns items to the start of the container */
+    gap: 20px;
+    /* Creates a gap between items */
+}
+
+.answer-option-input {
+    background-color: #3C3C3C;
+    /* White background for the answer options */
+    color: white;
+    /* Black text color */
+    border: none;
+    /* No border */
+    width: 21%;
+    /* Width to match the question container */
+    margin: 30px 0;
+    /* Margin between answer options */
+    padding: 5px;
+    /* Padding inside the answer options */
+    text-align: left;
+    border-radius: 5px;
+    justify-content: left;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .button {
+        font-size: calc(100% * (1/768));
+        /* Adjusts font size relative to screen width */
+        padding: 1em;
+        /* Adjusts padding */
+    }
+}
+
+/* Further adjusts button for very small screens */
+@media (max-width: 480px) {
+    .button {
+        width: 100%;
+        /* Makes the button full width */
+        box-sizing: border-box;
+        /* Ensures padding is included in width calculation */
+        font-size: calc(100% * (1/480));
+        /* Adjusts font size relative to screen width */
+    }
+}
+
+.button {
+    padding: 1em 2em;
+    /* Provides padding that scales with font size */
+    font-size: 16px;
+    /* Base font size */
+    background-color: #555;
+    color: white;
+    border: none;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* Adds a transition effect when hovering */
+}
+
+.submit-container {
+    display: flex;
+    justify-content: center; /* This centers the button horizontally */
+    align-items: center; /* This would center the button vertically if the container's height is set */
+    height: 100px; /* You can set the height as needed */
+}
+.image-adjust{
+    width: 200px;
+    justify-content: left;
+}
+.bar{
+    color: aliceblue;
+    font-weight: 600;
+    font-size:  1.1rem;
+    border-radius: 17px;
+    border: 2px solid black;
+}
